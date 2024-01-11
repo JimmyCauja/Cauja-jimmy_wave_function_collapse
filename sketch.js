@@ -7,7 +7,7 @@ const reglas = [
   {
     //tile 0
     UP: 0,
-    RIGHT: 0,
+    RIGHT: 1,
     DOWN: 0,
     LEFT: 0,
   },
@@ -16,53 +16,53 @@ const reglas = [
     UP: 0,
     RIGHT: 1,
     DOWN: 0,
-    LEFT: 0,
-  },
-  {
-    //tile 2
-    UP: 0,
-    RIGHT: 1,
-    DOWN: 2,
     LEFT: 1,
   },
   {
-    //tile 3
+    //tile 2
     UP: 0,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 1,
   },
   {
+    //tile 3
+    UP: 1,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 0,
+  },
+  {
     //tile 4
-    UP: 2,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 5
-    UP: 0,
-    RIGHT: 1,
+    UP: 1,
+    RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 6
-    UP: 0,
-    RIGHT: 1,
-    DOWN: 2,
-    LEFT: 1,
+    UP: 1,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 0,
   },
   {
     //tile 7
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
-    LEFT: 1,
+    LEFT: 0,
   },
   {
     //tile 8
-    UP: 2,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
@@ -71,64 +71,64 @@ const reglas = [
     //tile 9
     UP: 0,
     RIGHT: 0,
-    DOWN: 2,
-    LEFT: 0,
+    DOWN: 0,
+    LEFT: 1,
   },
   {
     //tile 10
-    UP: 2,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 11
-    UP: 2,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 12
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 2,
+    DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 13
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 2,
+    DOWN: 0,
     LEFT: 0,
   },
   {
     //tile 14
-    UP: 2,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 1,
-  },
-  {
-    //tile 15
     UP: 0,
     RIGHT: 1,
     DOWN: 0,
     LEFT: 0,
   },
   {
-    //tile 16
-    UP: 2,
-    RIGHT: 1,
-    DOWN: 0,
+    //tile 15
+    UP: 0,
+    RIGHT: 0,
+    DOWN: 1,
     LEFT: 0,
+  },
+  {
+    //tile 16
+    UP: 0,
+    RIGHT: 1,
+    DOWN: 1,
+    LEFT: 1,
   },
   {
     //tile 17
     UP: 0,
     RIGHT: 0,
-    DOWN: 0,
-    LEFT: 1,
+    DOWN: 1,
+    LEFT: 0,
   },
   {
     //tile 18
@@ -148,61 +148,61 @@ const reglas = [
     //tile 20
     UP: 0,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 21
     UP: 0,
-    RIGHT: 0,
-    DOWN: 0,
-    LEFT: 0,
+    RIGHT: 1,
+    DOWN: 1,
+    LEFT: 1,
   },
   {
     //tile 22
     UP: 0,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 23
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 24
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 25
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 26
     UP: 0,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 27
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
-    DOWN: 0,
+    DOWN: 1,
     LEFT: 0,
   },
   {
     //tile 28
-    UP: 0,
+    UP: 1,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
