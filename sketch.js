@@ -1,5 +1,5 @@
 const celdas = []; 
-const RETICULA = 8;
+const RETICULA = 6;
 let ancho; //anchura de celda
 let alto; //altura de celda
 
@@ -222,7 +222,7 @@ const reglas = [
 
 function preload() {
   for (let i = 0; i < NA; i++) {
-    azulejos[i] = loadImage(`azulejos/tile${i.png}`);
+    azulejos[i] = loadImage(`azulejos/tile${i}.png`);
   }
 }
 
@@ -232,7 +232,7 @@ function setup() {
   ancho = width / RETICULA;
   alto = height / RETICULA; 
 
-  let opcionesI = []
+  let opcionesI = [];
   for (let i = 0; i < azulejos.length; i++) {
     opcionesI.push(i);
   }
@@ -255,9 +255,7 @@ function setup() {
 
 function draw() {
   // background(111);
-  const celdasDisponibles = celdas.filter((celda) => {
-    return celda.colapsada == false;
-  });
+  const celdasDisponibles = celdas.filter((celda) => celda.colapsada == false);
     
   if (celdasDisponibles.length > 0){
     celdasDisponibles.sort((a, b) => {
@@ -265,7 +263,9 @@ function draw() {
     });
 
     const celdasPorColapsar = celdasDisponibles.filter((celda) => {
-      return (celda.opciones.length == celdasDisponibles[0].opciones.length);
+      return (
+        celda.opciones.length == celdasDisponibles[0].opciones.length
+      );
     });
 
     const celdaSeleccionada = random(celdasPorColapsar);
@@ -278,13 +278,12 @@ function draw() {
 
 
     for (let x = 0; x < RETICULA; x++) {
-      for (let y = 0; x < RETICULA; y++) {
+      for (let y = 0; y < RETICULA; y++) {
         const celdaIndex = x + y * RETICULA;
         const celdaActual = celdas[celdaIndex];
         if (celdaActual.colapsada) { 
         
-          image(
-            azulejos[celdaActual.opciones[0]],
+          image(azulejos[celdaActual.opciones[0]],
             x * ancho,
             y * alto,
             ancho,
