@@ -1,13 +1,15 @@
-const celdas = [];
+const celdas = []; 
 const RETICULA = 5;
 
-const azulejos = 5;
-const NA = 30;
+const azulejos = [];
+const NA = 30; // numero de azulejos
+
 const reglas = [
+  // reglas de los bordes de cada azulejo
   {
     //tile 0
     UP: 0,
-    RIGHT: 1,
+    RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
   },
@@ -190,19 +192,19 @@ const reglas = [
     //tile 26
     UP: 0,
     RIGHT: 0,
-    DOWN: 1,
+    DOWN: 2,
     LEFT: 0,
   },
   {
     //tile 27
-    UP: 1,
+    UP: 2,
     RIGHT: 0,
-    DOWN: 1,
+    DOWN: 2,
     LEFT: 0,
   },
   {
     //tile 28
-    UP: 1,
+    UP: 2,
     RIGHT: 0,
     DOWN: 0,
     LEFT: 0,
@@ -210,7 +212,7 @@ const reglas = [
   {
     //tile 29
     UP: 0,
-    RIGHT: 0,
+    RIGHT: 1,
     DOWN: 0,
     LEFT: 0,
   },
@@ -218,18 +220,19 @@ const reglas = [
 
 function preload() {
   for (let i = 0; i < NA; i++){
-    azulejos[i] = loadImage(`azulejos/tile${i}.png`);
+    azulejos[i] = loadImage(`imagenes/tile${i.png}`);
   }
 }
 
 function setup() {
   createCanvas(1080, 1080);
+
   let opcionesI = []
-  for (let i = o; i < azulejos.length; i++) {
+  for (let i = 0; i < azulejos.length; i++) {
     opcionesI.push(i);
   }
 
-  for (let i = o; i < RETICULA * RETICULA; i++){
+  for (let i = 0; i < RETICULA * RETICULA; i++){
     celdas[i] = {
       colapsada: false,
       opciones: opcionesI,
