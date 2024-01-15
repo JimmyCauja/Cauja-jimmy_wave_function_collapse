@@ -1,11 +1,11 @@
-const celdas = [ ]; 
-const RETICULA = 8;
+const celdas = []; 
+const RETICULA = 16;
 
 let ancho; //anchura de celda
 let alto; //altura de celda
 
-const azulejos = [ ];
-const NA = 26; // numero de azulejos
+const azulejos = [];
+const NA = 28; // numero de azulejos
 
 const reglas = [
   // reglas de los bordes de cada azulejo
@@ -191,6 +191,20 @@ const reglas = [
     DOWN: 0,
     LEFT: 0,
   },
+  {
+    // tile 26
+    UP: 1,
+    RIGHT: 1,
+    DOWN: 1,
+    LEFT: 0,
+  },
+  {
+    // tile 27
+    UP: 1,
+    RIGHT: 0,
+    DOWN: 1,
+    LEFT: 1,
+  },
 ];
 
 function preload() {
@@ -272,7 +286,7 @@ function draw() {
             ancho,
             alto
           );
-           // Cambiar entropía UP
+           // Cambiar entropia UP
 					if (y > 0) {
 						const indiceUP = x + (y - 1) * RETICULA;
 						const celdaUP = celdas[indiceUP];
