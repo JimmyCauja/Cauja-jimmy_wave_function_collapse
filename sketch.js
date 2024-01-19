@@ -5,7 +5,7 @@ let ancho; //anchura de celda
 let alto; //altura de celda
 
 const azulejos = [];
-const NA = 28; // numero de azulejos
+const NA = 30; // numero de azulejos
 
 const reglas = [
   // reglas de los bordes de cada azulejo
@@ -204,6 +204,20 @@ const reglas = [
     RIGHT: 0,
     DOWN: 1,
     LEFT: 1,
+  },
+  {
+    // tile 28
+    UP: 1,
+    RIGHT: 0,
+    DOWN: 0,
+    LEFT: 1,
+  },
+  {
+    // tile 29
+    UP: 1,
+    RIGHT: 1,
+    DOWN: 0,
+    LEFT: 0,
   },
 ];
 
